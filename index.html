@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Annalee Johnson">
 	  <meta name="description" content="Annalee Johnson's UX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- fontawesome and favicon-->
     <script src="https://kit.fontawesome.com/07bc3d8833.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,7 +20,7 @@
           background-color: white;
           font-family: 'Noto Sans', sans-serif;
           font-size: 24px;
-          font-weight: 400px;
+          font-weight: 400;
           line-height: 1.6;
           color: black;
       }
@@ -50,7 +51,7 @@
   <body>
   <!-- header -->
     <header>
-      <div>
+      <div class= "nav">
         <img src="img/logo/logo.png" alt="Annalee Johnson Logo">
         <nav>
           <ul>
@@ -68,8 +69,8 @@
       </div>
     </header>
   <!--Hero Section -->
-    <div>
-        <div>
+    <div id="hero-section">
+        <div class="intro">
           <h1> Hi, I'm Annalee </h1>
             <h3> I'm a UX Designer based in Chicago</h3>
           <p> After studying the politics and history behind people, I decided to
@@ -79,10 +80,10 @@
         </div>
     </div>
   <!-- Work Section -->
-    <div>
-        <div>
+    <div id="work-section">
+        <div class="mywork">
           <h1> My Work </h1>
-          <div><!-- row for Jovis columns -->
+          <div class="jovis"><!-- row for Jovis columns -->
             <div><!-- first column-->
               <picture>
                 <source srcset="img/homepage/600px/joviscover_1x.jpeg" media="(max-width: 767px)">
@@ -93,10 +94,10 @@
               <h2> JOVIS </h2>
               <h4> Designing a Health & Wellness App </h4>
               <p> How do we help busy individuals manage their health and wellness on-the-go?</p>
-              <a href="jovis.html"> View Project Brief </a>
+              <a href="jovis.html" class="button"> View Project Brief </a>
             </div>
           </div>
-          <div><!-- row for Moheom columns -->
+          <div class="moheom"><!-- row for Moheom columns -->
             <div><!-- first column-->
               <picture>
                 <source srcset="img/homepage/600px/moheomcover_1x.jpeg" media="(max-width: 767px)">
@@ -107,7 +108,7 @@
               <h2> MOHEOM </h2>
               <h4> Designing a Language Learning App  </h4>
               <p> How do encourage people to learn language while ensuring they stay engaged? </p>
-              <a href="#"> View Project Brief </a>
+              <a href="#" class="button"> View Project Brief </a>
             </div>
           </div>
         </div>
@@ -119,7 +120,7 @@
           <p> annaleexjohnson@gmail.com</p>
           <a href="tel: +10000000000"> Give me a call: 000.000.0000 </a>
           <div> <!--send email-->
-            <a href="mailto: annaleexjohnson@gmail.com"> Send email </a>
+            <a href="mailto: annaleexjohnson@gmail.com" class="button email"> SEND EMAIL </a>
           </div>
           <div> <!-- social media links -->
             <a href="https://www.behance.net/annaleejohnson" target="_blank"> <!-- Behance -->

@@ -1,0 +1,80 @@
+/* Red: #9C2409 */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+}
+img {
+    width: 100%;
+}
+/* links */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*a:visited {
+    color: blue;
+}*/
+a:active {
+    color: #9C2409;
+}
+.button {
+    display: inline-block;
+    background-color: #9C2409;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button.email{
+    display: inline-block;
+    background-color: white;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    border: 7px solid #9C2409;
+    transition: 0.2s opacity;
+}
+.button.email:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.button.casestudy {
+    display: inline-block;
+    background-color: #9C2409;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    transition: 0.2s opacity;
+}
+.button.casestudy:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}

@@ -2,9 +2,34 @@
 *{
     box-sizing: border-box;
 }
+/*layout styling*/
+.container {
+    padding: 0 15px;
+}
+.row{
+    display: inline-block;
+    margin: 25px 0;
+}
+
+#work .row{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #C4C4C4;
+}
+#hero {
+    display: inline-block;
+    background-color:white;
+    border-bottom: 2px solid #C4C4C4;
+}
+.center {
+    text-align: center;
+}
+.logo {
+    max-width: 500px;
+}
 img {
     width: 100%;
 }
+
 /*header*/
 header {
     position: relative;
@@ -42,40 +67,32 @@ nav > ul > li > a:avisited{
     color: #9C2409;
 }
 
-
-
-
-/*layout styling*/
-.container {
-    padding: 0 15px;
-}
-.row{
-    display: inline-block;
-    margin: 25px 0;
-}
-
-#work .row{
-    padding-bottom: 25px;
-    border-bottom: 2px solid #C4C4C4;
-}
-#hero {
-    display: inline-block;
-    background-color:white;
-    border-bottom: 2px solid #C4C4C4;
-}
-.center {
+/*footer*/
+footer{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
     text-align: center;
 }
-.logo {
-    max-width: 500px;
+.sociallink {
+    display: inline-block;
+    font-size: 2em;
+    color: white;
+    background-color: #9C2409;
+    padding: 10px;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
-
-
-
 
 /* links */
 a {
     text-decoration: none;
+    color: inherit;
 }
 a:hover {
     text-decoration: underline;

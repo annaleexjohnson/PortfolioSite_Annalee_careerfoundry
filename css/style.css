@@ -1,19 +1,80 @@
 /* Red: #9C2409 */
+*{
+    box-sizing: border-box;
+}
 img {
     width: 100%;
 }
+
+/*header*/
+header {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul {
+    padding: 0px;
+    list-style-type: none;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+nav > ul > li > a:active{
+    text-decoration: underline;
+}
+
+
+
+
+/*layout styling*/
+.container {
+    padding: 0 15px;
+}
+.row{
+    margin: 25px 0;
+}
+
+#work .row{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #C4C4C4;
+}
+#hero {
+    display: inline-block;
+    background-color:white;
+    border-bottom: 2px solid #C4C4C4;
+}
+.center {
+    text-align: center;
+}
+.logo {
+    max-width: 500px;
+}
+
+
+
 /* links */
 a {
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-}
-/*a:visited {
-    color: blue;
-}*/
-a:active {
-    color: #9C2409;
 }
 .button {
     display: inline-block;

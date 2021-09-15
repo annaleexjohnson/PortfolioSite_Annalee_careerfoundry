@@ -4,7 +4,7 @@
 }
 /*layout styling*/
 .container {
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .row{
     display: inline-block;
@@ -23,12 +23,14 @@
 .center {
     text-align: center;
 }
+.right {
+    text-align: right;
+}
 .logo {
     max-width: 500px;
 }
-img {
-    width: 100%;
-}
+
+
 
 /*header*/
 header {
@@ -143,4 +145,27 @@ a:hover {
 .button.casestudy:hover {
     opacity: 0.8;
     text-decoration: none;
+}
+
+/*project briefs*/
+.banner{
+    display:inline-block;
+    width: 100%;
+    background-color: #9C2409;
+    color: white;
+    padding: 0 10px;
+    text-align: left;
+}
+#jovis img {
+    max-width: 500px;
+    height: auto;
+}
+.viewproject {
+    margin: 100px auto;
+}
+.banner{
+    display: inline-block;
+    width: 100%;
+    background-color: #9C2409;
+    color: white;
 }

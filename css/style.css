@@ -12,19 +12,39 @@
 }
 
 #work .row{
+    display: inline-block;
+    width: 100%;
     padding-bottom: 25px;
     border-bottom: 2px solid #C4C4C4;
+}
+#work .container {
+    margin-bottom: 200px;
+}
+.myproject {
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.resize {
+    max-width: 600px;
 }
 #hero {
     display: inline-block;
     background-color:white;
     border-bottom: 2px solid #C4C4C4;
 }
+
 .center {
     text-align: center;
 }
 .right {
     text-align: right;
+}
+.flright {
+    float: right;
+}
+.flleft {
+    float: left;
 }
 .logo {
     max-width: 500px;
@@ -60,6 +80,7 @@ h6 {
     font-size: 24px;
     font-weight: 700;
 }
+
 @media screen and (max-width: 767px) {
 body {
   font-size: 12px;
@@ -73,18 +94,20 @@ h2 {
 h3 {
   font-size: 18px;
 }
-.button, h6 {
+h6 {
   font-size: 14px;
 }
 }
 
 /*header*/
 header {
+    display: inline-block;
     position: relative;
     width: 100%;
     background-color: black;
     color: white;
     padding: 10px 0;
+    margin: auto;
     text-align: center;
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -117,12 +140,14 @@ nav > ul > li > a:avisited{
 
 /*footer*/
 footer{
+    display: inline-block;
     position: relative;
     width: 100%;
     background-color: black;
     color: white;
     padding: 10px 0;
     margin-top: 40px;
+    margin: auto;
     text-align: center;
 }
 .sociallink {
@@ -185,6 +210,7 @@ a:hover {
     font-size: 48px;
     font-weight: bold;
     padding: 10px;
+    margin: 10px 0;
     border-bottom: 2px solid black;
     transition: 0.2s opacity;
 }
@@ -207,11 +233,24 @@ a:hover {
     height: auto;
 }
 .viewproject {
-    margin: 100px auto;
+    margin-bottom: 100px;
 }
 .banner{
     display: inline-block;
     width: 100%;
     background-color: #9C2409;
     color: white;
+}
+.details {
+    color: white;
+    background-color: #9C2409;
+    padding: 20px;
+    height: 650px;
+    width: 35%;
+    
+}
+.title{
+    background-color: #9C2409;
+    color: white;
+    padding: 0 10px;
 }

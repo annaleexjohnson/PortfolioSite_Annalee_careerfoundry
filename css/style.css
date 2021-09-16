@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 /*layout styling*/
 .container {
     padding: 0 30px;
@@ -29,10 +32,13 @@
     max-width: 600px;
 }
 #hero {
-    display: inline-block;
     background-color:white;
-    border-bottom: 2px solid #C4C4C4;
 }
+#hero .container {
+    border-bottom: 2px solid #C4C4C4;
+    margin: 0 30px;
+}
+
 
 .center {
     text-align: center;
@@ -46,15 +52,12 @@
 .flleft {
     float: left;
 }
-.logo {
-    max-width: 500px;
-}
 
 /*general typography */
 body {
     background-color: white;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.6;
     color: black;
@@ -75,28 +78,14 @@ h3 {
     font-weight: 500;
     font-size: 1.5em;
 }
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
 h6 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
-}
-
-@media screen and (max-width: 767px) {
-body {
-  font-size: 12px;
-}
-h1 {
-  font-size: 36px;
-}
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 14px;
-}
 }
 
 /*header*/
@@ -127,7 +116,7 @@ nav > ul > li {
 nav > ul > li > a {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     padding: 0 15px;
 }
@@ -150,15 +139,18 @@ footer{
     margin: auto;
     text-align: center;
 }
-.sociallink {
+.sociallink{
+    display: inline-block;
+}
+i {
     display: inline-block;
     font-size: 2em;
     color: white;
     background-color: #9C2409;
-    padding: 10px;
+    padding: 27px;
     margin: 20px;
-    height: 100px;
-    width: 100px;
+    text-align: center;
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -175,7 +167,7 @@ a:hover {
     background-color: #9C2409;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     padding: 10px;
     border-bottom: 2px solid black;
@@ -191,7 +183,7 @@ a:hover {
     background-color: white;
     color:black;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 36px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px;
     border: 7px solid #9C2409;
@@ -207,7 +199,7 @@ a:hover {
     background-color: #9C2409;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
     padding: 10px;
     margin: 10px 0;
@@ -228,26 +220,15 @@ a:hover {
     padding: 0 10px;
     text-align: left;
 }
+.cover{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 #jovis img {
-    max-width: 500px;
-    height: auto;
+    max-width: 100%;
 }
 .viewproject {
     margin-bottom: 100px;
-}
-.banner{
-    display: inline-block;
-    width: 100%;
-    background-color: #9C2409;
-    color: white;
-}
-.details {
-    color: white;
-    background-color: #9C2409;
-    padding: 20px;
-    height: 650px;
-    width: 35%;
-    
 }
 .title{
     background-color: #9C2409;

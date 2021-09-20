@@ -7,7 +7,7 @@ img{
 }
 /*layout styling*/
 .container {
-    padding: 0 30px;
+    padding: 0 10px;
 }
 .row{
     display: inline-block;
@@ -21,24 +21,24 @@ img{
     border-bottom: 2px solid #C4C4C4;
 }
 #work .container {
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 .myproject {
     max-width: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 .resize {
     max-width: 600px;
 }
 #hero {
     background-color:white;
+    padding: 20px;
 }
 #hero .container {
     border-bottom: 2px solid #C4C4C4;
-    margin: 0 30px;
+    margin: 0 10px;
 }
-
 
 .center {
     text-align: center;
@@ -64,7 +64,7 @@ body {
 }
 h1, h2, h3, h6 {
     font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.4;
+    line-height: normal;
 }
 h1 {
     font-weight: 700;
@@ -84,8 +84,13 @@ h4 {
 }
 h6 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.role p{
+    font-size: 12px;
 }
 
 /*header*/
@@ -96,11 +101,11 @@ header {
     background-color: black;
     color: white;
     padding: 10px 0;
-    margin: auto;
+    margin-bottom: 10px;
     text-align: center;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 }
 nav {
     display: inline-block;
@@ -116,7 +121,7 @@ nav > ul > li {
 nav > ul > li > a {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     padding: 0 15px;
 }
@@ -126,6 +131,7 @@ nav > ul > li > a:active{
 nav > ul > li > a:avisited{
     color: #9C2409;
 }
+
 
 /*footer*/
 footer{
@@ -219,6 +225,20 @@ a:hover {
     color: white;
     padding: 0 10px;
     text-align: left;
+    margin-bottom: 25px;
+}
+.row p{
+    margin: 0;
+}
+.row h6{
+    margin-top: 10px;
+}
+.role {
+    display: inline-block;
+    background-color: #9C2409;
+    color: white;
+    padding: 10px;
+    margin: 0;
 }
 .cover{
     margin: 0 auto;
@@ -228,10 +248,127 @@ a:hover {
     max-width: 100%;
 }
 .viewproject {
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 .title{
     background-color: #9C2409;
     color: white;
-    padding: 0 10px;
+    padding: 10px 10px;
+}
+.col-sm-2{
+    width: 50%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/*Medium Devices 640px and bigger*/
+@media only screen and (min-width: 640px){
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    [class*="col-"]{
+        float: left;
+        padding: 10px;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+}
+/*large devices 1024px and bigger*/
+@media only screen and (min-width: 1024px){
+    .col-lg-5{
+        width: 42%;
+    }
+    .col-lg-7{
+        width: 58%;
+    } 
+    nav > ul > li > a{
+        font-size: 30px;
+    } 
+    .button {
+        font-size: 36px;
+    }
+    .button.email {
+        font-size: 36px;
+    }
+    body {
+        font-size: 24px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 3em;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 2em;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    h6 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+    }
+    .role p{
+        font-size: 12px;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hero .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{
+        width: 300px;
+        height: auto;
+        float: left;
+    }
+    footer{
+        margin-top: 75px;
+    }
+    .mystory p {
+        font-size: 16px;
+    }
+}
+/* Xlarge devices 1920px and bigger */
+@media only screen and (min-width: 1920px) {
+    
 }

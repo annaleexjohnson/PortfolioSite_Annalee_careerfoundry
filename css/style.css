@@ -8,6 +8,7 @@ img{
 /*layout styling*/
 .container {
     padding: 0 10px;
+    margin: 0 auto;
 }
 .row{
     display: inline-block;
@@ -100,8 +101,8 @@ header {
     width: 100%;
     background-color: black;
     color: white;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    padding-top: 10px 0;
+    margin: 0 auto;
     text-align: center;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -125,13 +126,18 @@ nav > ul > li > a {
     font-weight: bold;
     padding: 0 15px;
 }
-nav > ul > li > a:active{
-    text-decoration: underline;
+nav > ul > li > a:hover{
+    color: #FF9898;
 }
-nav > ul > li > a:avisited{
-    color: #9C2409;
+nav > ul > li > a:active{
+    color: #FF9898;
 }
 
+/* my story */
+.mystory{
+    display: inline-block;
+    max-width: 100%;
+}
 
 /*footer*/
 footer{
@@ -152,25 +158,24 @@ i {
     display: inline-block;
     font-size: 2em;
     color: white;
-    background-color: #9C2409;
+    background-color: #FF9898;
     padding: 27px;
     margin: 20px;
     text-align: center;
     max-width: 100%;
     border-radius: 50%;
 }
+/*about page*/
+
 
 /* links */
 a {
     text-decoration: none;
     color: inherit;
 }
-a:hover {
-    text-decoration: underline;
-}
 .button {
     display: inline-block;
-    background-color: #9C2409;
+    background-color: #FF9898;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
@@ -192,7 +197,7 @@ a:hover {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    border: 7px solid #9C2409;
+    border: 7px solid #FF9898;
     transition: 0.2s opacity;
 }
 .button.email:hover {
@@ -202,7 +207,7 @@ a:hover {
 
 .button.casestudy {
     display: inline-block;
-    background-color: #9C2409;
+    background-color: #FF9898;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
@@ -221,7 +226,7 @@ a:hover {
 .banner{
     display:inline-block;
     width: 100%;
-    background-color: #9C2409;
+    background-color: #FF9898;
     color: white;
     padding: 0 10px;
     text-align: left;
@@ -235,7 +240,7 @@ a:hover {
 }
 .role {
     display: inline-block;
-    background-color: #9C2409;
+    background-color: #FF9898;
     color: white;
     padding: 10px;
     margin: 0;
@@ -252,7 +257,7 @@ a:hover {
     margin-bottom: 100px;
 }
 .title{
-    background-color: #9C2409;
+    background-color: #FF9898;
     color: white;
     padding: 10px 10px;
 }
@@ -269,7 +274,55 @@ a:hover {
     display: table;
 }
 
+#about-header{
+    background-color: black;
+    color: white;
+}
+#about-header .row {
+    margin: 0 auto;
+}
+#about-header h1 {
+    margin: 0;
+    padding-top: 40px;
+}
+.skillscontainer{
+    margin-top: 50px;
+}
+.skills, .tools {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
+/*svs*/
+#aboutsvg {
+    max-width: 100%;
+}
+@keyframes color-change {
+    0% {fill: #FF9898;}
+    50% {fill: #FFBD98;}
+    100% {fill: #FFFCBD;}
+}
+@keyframes move-smoke {
+    from {transform: translate(-21.2132px, -95px);}
+    to {transform: translate(-21.2132px, -200px);}
+}
+.sun{
+    animation: 5s color-change infinite alternate linear;
+}
+
+.leaf{
+    fill: #FF6C6C;
+}
+.shirt {
+    fill: #FF6C6C;
+}
+.window{
+    fill: #FF6C6C;
+}
+.smoke{
+    animation: 4s move-smoke infinite alternate linear;
+}
 
 /*Medium Devices 640px and bigger*/
 @media only screen and (min-width: 640px){
@@ -298,6 +351,17 @@ a:hover {
         clear: both;
         display: table;
     }
+    .aboutintro h2 {
+        font-size: 36px;
+    }
+    .aboutintro p{
+       font-size: 18px;
+    }
+    .aboutintro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
 }
 /*large devices 1024px and bigger*/
@@ -309,39 +373,13 @@ a:hover {
         width: 58%;
     } 
     nav > ul > li > a{
-        font-size: 30px;
+        font-size: 24px;
     } 
     .button {
-        font-size: 36px;
+        font-size: 18px;
     }
     .button.email {
-        font-size: 36px;
-    }
-    body {
-        font-size: 24px;
-    }
-    h1 {
-        font-weight: 700;
-        font-size: 3em;
-    }
-    h2 {
-        font-weight: 600;
-        font-size: 2em;
-    }
-    h3 {
-        font-weight: 500;
-        font-size: 1.5em;
-    }
-    h4 {
-        font-size: 1em;
-        font-weight: bold;
-    }
-    h6 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 0;
-        margin: 0;
+        font-size: 18px;
     }
     .role p{
         font-size: 12px;

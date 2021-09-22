@@ -7,7 +7,7 @@ img{
 }
 /*layout styling*/
 .container {
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .row{
@@ -386,6 +386,7 @@ a {
     }
     .container {
         max-width: 1200px;
+        padding: 50px;
         margin-left: auto;
         margin-right: auto;
     }

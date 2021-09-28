@@ -246,7 +246,7 @@ a {
     display:inline-block;
     width: 100%;
     background-color: #FF9898;
-    color: white;
+    color: black;
     padding: 0 10px;
     text-align: left;
     margin-bottom: 25px;
@@ -260,24 +260,25 @@ a {
 .role {
     display: inline-block;
     background-color: #FF9898;
-    color: white;
+    color: black;
     padding: 10px;
     margin: 0;
 }
 .cover{
-    margin: 0 auto;
-    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto;
+    max-width: 75%;
 }
-#jovis img {
-    max-width: 100%;
-}
+
 .viewproject {
     margin-top: 50px;
     margin-bottom: 100px;
 }
 .title{
     background-color: #FF9898;
-    color: white;
+    color: black;
     padding: 10px 10px;
 }
 .col-sm-2{
@@ -362,7 +363,10 @@ a {
         flex-direction: column;
         justify-content: center;
     }
-    
+    .role{
+        max-width: 300px;
+        margin-right: 50px;
+    }
 }
 /*large devices 1024px and bigger*/
 @media only screen and (min-width: 1024px){

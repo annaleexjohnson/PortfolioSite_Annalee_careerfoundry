@@ -20,15 +20,18 @@
   <body>
   <!-- header -->
     <header>
-      <div class="container">
-        <img src="img/logo/1200logo.png" class="logo" alt="Annalee Johnson Logo">
-        <nav>
-          <ul>
-              <li> <a href="#work" class="nav"> WORK </a> </li>
-              <li> <a href="about.html" class="nav"> ABOUT </a> </li>
-              <li> <a href="#contact" class="nav"> CONTACT </a> </li>
-          </ul>
-        <nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/logo/1200logo.png" class="logo" alt="Annalee Johnson Logo">
+        </a>
+          <nav>
+            <ul>
+                <li> <a href="#work"> WORK </a> </li>
+                <li> <a href="about.html"> ABOUT </a> </li>
+                <li> <a href="#contact"> CONTACT </a> </li>
+                <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
       </div>
     </header>
 
@@ -94,13 +97,13 @@
             <a href="mailto: annaleexjohnson@gmail.com" class="button email"> SEND EMAIL </a>
           </div>
           <h4><a href="#"> Give me a call: 000.000.0000 </a> </h4>
-          <div> <!-- social media links -->
-            <div class="sociallink">
+          <div class="sociallink"> <!-- social media links -->
+            <div>
             <a href="https://www.behance.net/annaleejohnson" target="_blank">  <!-- Behance -->
               <i class="fab fa-behance"></i>
             </a>
             </div>
-            <div class="sociallink">
+            <div>
             <a href="https://www.linkedin.com/in/annalee-johnson-a738b5158/" target="_blank" > <!-- LinkedIn-->
               <i class="fab fa-linkedin"></i>
             </a>
